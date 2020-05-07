@@ -14,13 +14,6 @@ import static org.junit.Assert.assertEquals;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        ORouter.init();
-        ORouter.start("{\n" +
-                "\"path\":\"test\",\n" +
-                "\"message\":\"it is test message\"\n" +
-                "}");
-
-
         assertEquals(4, 2 + 2);
     }
 
