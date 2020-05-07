@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':apt-annotation')
+    implementation 'com.squareup:javapoet:1.12.1'
+    compileOnly 'com.google.auto.service:auto-service-annotations:1.0-rc6'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc6'
+    compileOnly 'net.ltgt.gradle.incap:incap:0.2'
+    annotationProcessor 'net.ltgt.gradle.incap:incap-processor:0.2'
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
