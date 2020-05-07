@@ -3,6 +3,6 @@ package com.example;
 
 import com.example.apt_api.operation.Model;
 
-public class TestModel extends Model {
-    public String des;
+public class TestModel2 extends Model {
+    public String msg;
 }

@@ -11,7 +11,7 @@ public class Model {
         this.path = path;
     }
 
-    public Request createRequest() {
-        return new Request<>(this);
+    public Request createRequest(IActivity iActivity) {
+        return new Request<>(this, iActivity);
     }
 }

@@ -30,9 +30,9 @@ public class Operators {
         }
     }
 
-    public static void start(String content) {
+    public static void start(IActivity iActivity, String content) {
         Model model = findModel(content);
-        Request request = model.createRequest();
+        Request request = model.createRequest(iActivity);
         Operation operation = findOperation(request);
         if (operation != null) {
             operation.start();

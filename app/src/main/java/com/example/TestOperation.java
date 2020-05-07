@@ -1,5 +1,8 @@
 package com.example;
 
+import android.app.Activity;
+import android.content.Intent;
+
 import com.example.apt_annotation.ORouter;
 import com.example.apt_api.operation.Operation;
 
@@ -7,6 +10,6 @@ import com.example.apt_api.operation.Operation;
 public class TestOperation extends Operation<TestModel> {
     @Override
     public void start() {
-        System.out.println("TestOperation started message is " + request.getModel().message);
+        request.startActivity(request.getModel().des);
     }
 }
