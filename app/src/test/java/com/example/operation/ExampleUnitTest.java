@@ -1,11 +1,8 @@
 package com.example.operation;
 
-import com.example.apt_api.operation.Operators;
+import com.example.apt_api.operation.ORouter;
 
 import org.junit.Test;
-
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 
 import static org.junit.Assert.assertEquals;
 
@@ -17,8 +14,8 @@ import static org.junit.Assert.assertEquals;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        Operators.init();
-        Operators.start("{\n" +
+        ORouter.init();
+        ORouter.start("{\n" +
                 "\"path\":\"test\",\n" +
                 "\"message\":\"it is test message\"\n" +
                 "}");

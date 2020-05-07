@@ -7,7 +7,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.util.HashMap;
 
-public class Operators {
+public class ORouter {
     private static final HashMap<String, Entry> caches = new HashMap<>(100);
 
     public static void init() {
